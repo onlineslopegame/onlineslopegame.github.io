@@ -1,0 +1,185 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* start header style */
+
+#header {
+  z-index: 99;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  background-color: #333;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  width: ;
+}
+
+.logo {
+  border-bottom: 1px solid rgba(243, 245, 249, 0.1);
+  /* padding-bottom: 15px; */
+  /* margin-bottom: 42px; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.headwrap {
+  flex: 1;
+  /* border-bottom: solid 1px #000; */
+  background-color: #333;
+}
+
+.headtop {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 50px;
+  border-bottom: solid 1px #444;
+  background: url(images/headftone.png) 0 30% no-repeat,
+    linear-gradient(to right, #333 0, #333 100px, #222 100px, #222 100%);
+}
+
+.search {
+  position: relative;
+}
+
+.icon-search {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  font-size: 17px;
+  color: #666;
+  background-color: transparent;
+  border: none;
+}
+
+#search {
+  width: 300px;
+  padding: 8px 40px 8px 15px;
+  border: solid 1px #000;
+  background-color: #333;
+  color: #ddd;
+}
+
+#results {
+  display: none;
+  position: absolute;
+  overflow: hidden;
+  width: 300px;
+  top: 35px;
+  left: 0;
+  border-radius: 5px;
+  color: #aaa;
+  background-color: #222;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.icon-login {
+  display: block;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  margin: 0 10px;
+  border-radius: 50%;
+  font-size: 18px;
+  color: #ddd;
+  border: none;
+  background: #333;
+}
+textarea,
+input,
+select {
+  font-family: "Roboto", Arial, sans-serif;
+  box-sizing: border-box;
+  outline: none;
+  border-radius: 5px;
+  color: #333;
+  background: #fff;
+}
+
+/* #menu {
+  display: flex;
+  justify-content: flex-start;
+  list-style-type: none;
+  margin-bottom: 0;
+  padding-left: 0;
+  width: 99%;
+  margin: auto;
+  overflow-x: scroll;
+} */
+
+#menu {
+  display: flex;
+  /* overflow-x: hidden; */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#menu > li:first-child {
+  position: sticky; /* Fixed position ke liye */
+  left: 0;
+  z-index: 10; /* Sticky item ko sabse upar rakhne ke liye */
+}
+
+#menu-scroll {
+  width: 90px;
+  display: flex;
+  overflow-x: scroll; /* Scroll hone ke liye */
+  scrollbar-width: none; /* Firefox ke scrollbars ko hide karne ke liye */
+  -ms-overflow-style: none; /* IE/Edge ke liye */
+  flex-grow: 1; /* Baaki items ko space mein adjust karne ke liye */
+}
+
+/* Chrome, Safari aur Webkit browsers ke liye scrollbar hide karna */
+#menu-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+#menu li {
+  text-align: center;
+  border-right: solid 1px #444;
+  line-height: 28px;
+}
+
+.navhome a,
+.navover a {
+  display: block;
+  font-weight: 500;
+  color: #ccc;
+  margin: 4px 10px;
+}
+
+.navhome a {
+  font-size: 18px;
+  padding-top: 2px;
+}
+
+.navover a {
+  font-size: 15px;
+  min-width: 60px;
+  width: max-content;
+  border-bottom-style: solid;
+  border-width: 2px;
+  text-decoration: none;
+}
+
+/* end header style */
+
+/* start footer style */
+#footer {
+  display: flex;
+  width: 100%;
+  justify-content:center;
+  position: relative;
+  white-space: nowrap;
+  color: #aaa;
+  border-top: solid 1px #111;
+  background-color: #222;
+  position: absolute;
+  bottom: 0px;
+}
+/* end footer style */
